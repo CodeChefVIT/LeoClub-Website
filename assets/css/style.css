@@ -47,7 +47,7 @@ body, html {
 
 .bg-image {
   /* The image used */
-  background-image: url("leoclub3.jpg");
+  background-image: url("../img/leoclub3.jpg");
   
   /* Add the blur effect */
 
