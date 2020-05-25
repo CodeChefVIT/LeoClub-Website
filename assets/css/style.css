@@ -1,24 +1,24 @@
 
 *{
-    font-family: 'Girassol', cursive;
+    font-family:'Crimson Text', serif ;
 }
 .nav{
-    color:black;
+    color:white;
 }
 .nav-link .navbar-brand{
-    color: yellow !important;
+    color: #ebb700 !important;
 }
 .navbar-brand{
     font-size: 3vw !important;
 }
 .nav-link{
-    font-size: 1.3vw;
+    font-size: 25px;
 }
 
 .content{
   text-align: center;
   font-size: 90px;
-  color:yellow;
+  color:#ebb700;
   margin-bottom: 35vw;
 }
 h1{
@@ -28,26 +28,63 @@ h1{
 p{
     font-size: 20px;
     text-align: center;
-    font-family:'Comic Neue', cursive;
-    color:steelblue;
+    font-family:'Crimson Text', serif;
+    color:#ebb700;
 }
 h6{
-  font-family: 'Comic Neue', cursive;
+  font-family: 'Crimson Text', serif;
   font-size: 25px;
 }
 body, html {
   height: 100%;
+  max-width:100%;
+  font-family:'Crimson Text', serif;
+}
+.card{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto !important;
+}
+.board{
+  color: #0d2240;
+  margin-left: 40.5%;
+  margin-right: 40.5%;
+  text-shadow: 4px 4px 4px black;
+}
+.avatar {
+  vertical-align: middle;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 50%;
+}
+.avatar:.col-sm-4{
   
-  font-family:'Baloo Bhaina 2', cursive;
+}
+.names{
+  text-align: center;
+  margin-left: 35%;
+}
+.bg-shadow{
+  
+  text-shadow: 5px 5px 5px black;
+  background-color:#0d2240 ;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 25%;
+  padding:35px;
 }
 
-* {
-  box-sizing: border-box;
+.bg{
+  background-color:#0d2240;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 .bg-image {
   /* The image used */
-  background-image: url("../img/leoclub3.jpg");
+  background: linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("../img/leoclub3.jpg");
+  
   
   /* Add the blur effect */
 
@@ -61,11 +98,20 @@ body, html {
   background-size: cover;
   background-attachment: fixed;
 }
-
+.css-selector{
+  background: linear-gradient(
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+  );
+}
+.bg-color{
+  background-color:rgb(1, 1, 54);
+}
 /* Position text in the middle of the page/image */
 .bg-text {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  /*background-color: rgb(0,0,0); /* Fallback color */
+  /*background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  background-size: cover;
   color: white;
   font-weight: bold;
  /* border: 3px solid #f1f1f1;*/
@@ -131,26 +177,26 @@ body, html {
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
-  color: #3498db;
+  color:#00FFFF ;
   overflow: hidden;
   position: relative;
 
 }
 .btn i{
   line-height: 90px;
-  font-size: 26px;
+  font-size:30px;
   transition: 0.2s linear;
 }
 .btn:hover i{
 transform: scale(1.3);
-color: #f1f1f1;
+color: white
 }
 .btn::before{
   content: "";
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #3498db;
+  background: #00FFFF;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;
@@ -179,7 +225,7 @@ color: #f1f1f1;
 
 }
 .footer{
-  background:rgb(1, 1, 54);
+  background:#0d2240;
   color: #d3d3d3;
   height: 400px;
   
@@ -190,12 +236,12 @@ color: #f1f1f1;
 }
 .footer .footer-content
 {
-  border: 1px solid #3498db;
+  border: 1px solid #00FFFF;
   height: 350px;
 }
 .footer .footer-bottom{
-  background: rgb(1, 1, 54);
-  color:#3498db ;
+  background:#0d2240;
+  color:#00FFFF ;
   height: 50px;
   width: 100%;
   text-align: center;
@@ -204,6 +250,53 @@ color: #f1f1f1;
   left: 0px;
   padding-top: 20px;
 }
+.container {
+  position: relative;
+  width:100% ;
+  height: 50vh;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height:50vh ;
+  border:#0d2240 ;
+  border-style: double;
+  box-shadow:2px 2px 4px #0d2240;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0d2240;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+.overlay .h1{
+  font-size: 0.5vh;
+}
+.container:hover .overlay {
+  opacity: 1;
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color:#ebb700 ;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 font-family: 'Roboto', sans-serif;
 font-family: 'Baloo Bhaina 2', cursive;
 font-family: 'Comic Neue', cursive;
