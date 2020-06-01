@@ -47,8 +47,8 @@ body, html {
 }
 .board{
   color: #0d2240;
-  margin-left: 40.5%;
-  margin-right: 40.5%;
+  margin-left: 40%;
+  margin-right: 40%;
   text-shadow: 4px 4px 4px black;
 }
 .avatar {
@@ -116,11 +116,11 @@ body, html {
   font-weight: bold;
  /* border: 3px solid #f1f1f1;*/
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 80%;
+  width: 70%;
   padding: 20px;
   text-align: center;
 }
