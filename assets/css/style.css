@@ -47,8 +47,8 @@ body, html {
 }
 .board{
   color: #0d2240;
-  margin-left: 40.5%;
-  margin-right: 40.5%;
+  margin-left: 40%;
+  margin-right: 40%;
   text-shadow: 4px 4px 4px black;
 }
 .avatar {
