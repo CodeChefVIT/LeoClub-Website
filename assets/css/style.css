@@ -2,6 +2,15 @@
 *{
     font-family:'Crimson Text', serif ;
 }
+body, html {
+  height: 100%;
+  width:100%;
+  font-family:'Crimson Text', serif;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 .nav{
     color:white;
 }
@@ -9,10 +18,13 @@
     color: #ebb700 !important;
 }
 .navbar-brand{
-    font-size: 3vw !important;
+    font-size: 30px !important;
 }
 .nav-link{
-    font-size: 25px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left:10px;
+    margin-right: 10px;
 }
 
 .content{
@@ -35,16 +47,12 @@ h6{
   font-family: 'Crimson Text', serif;
   font-size: 25px;
 }
-body, html {
-  height: 100%;
-  max-width:100%;
-  font-family:'Crimson Text', serif;
-}
 
 .card{
   margin-left: auto;
   margin-right: auto;
   width: auto !important;
+  height:450px;
 }
 .card-body{
   text-align: center;
@@ -56,8 +64,18 @@ body, html {
 .board{
   color: #0d2240;
   margin-left: 39%;
-  margin-right: 39%;
+  margin-right: 39% !important;
   text-shadow: 4px 4px 4px black;
+}
+.board1{
+  text-align: center;
+  color: #0d2240;
+  text-shadow: 4px 4px 4px black;
+}
+.board1 > h1 {
+  text-align: center;
+  margin-right: 38%;
+  margin-left: 38%;
 }
 .avatar {
   vertical-align: middle;
@@ -97,12 +115,76 @@ body, html {
   
   /* Full height */
   height: 100%; 
-  
+  width: 100%;
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+@media (max-width: 767px){
+  .bg-text > h3{
+    font-size: 4vh !important;
+  }
+  .bg-text > h1 {
+    margin-left: 30% !important;
+    font-size: 3vh;
+  }
+  .text > h3{
+    font-size: 4vh !important;
+  }
+  .text > h1{
+    font-size: 5vh !important;
+  }
+  .navbar-brand{
+    font-size: 3.5vh !important;
+    margin: 0px;
+  }
+  .navbar-brand > img {
+    height: 60px !important;
+    width: 60px !important;
+    margin: 0px;
+  }
+  .nav-link {
+    font-size: 4vh !important;
+  }
+  .first{
+    height: 80% !important;
+    width:80% !important;
+  }
+  .third{
+    margin-left: 0 !important;
+    margin-right: 20% !important;
+  }
+  .board > h1{
+    font-size: 7vh !important;
+    text-align: center;
+  }
+  .board1 > h1{
+    font-size: 6vh !important;
+    margin-left:15.5%;
+    margin-right: 15.5%;
+  }
+  .card{
+    height: 400px !important;
+  }
+}
+@media (min-width:768px) and ( max-width:1024px){
+  .text > h3{
+    font-size: 4vh !important;
+  }
+  .text > h1{
+    font-size: 5vh !important;
+  }
+  .card{
+    height: 530px !important;
+  }
+  .card-body > h4{
+    font-size: 4.8vh !important;
+  }
+  .card-body > p {
+    font-size: 3.7vh !important;
+  }
 }
 .css-selector{
   background: linear-gradient(
@@ -120,8 +202,9 @@ body, html {
   background-size: cover;
   color: white;
   font-weight: bold;
+  font-size: 3vh !important;
  /* border: 3px solid #f1f1f1;*/
-  position: absolute;
+  position: relative;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -183,7 +266,7 @@ body, html {
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
-  color:#4679bd ;
+  color:#00FFFF ;
   overflow: hidden;
   position: relative;
 
@@ -202,7 +285,7 @@ color: white
   position: absolute;
   width: 120%;
   height: 120%;
-  background:#4679bd;
+  background:#00FFFF;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;
@@ -242,19 +325,19 @@ color: white
 }
 .footer .footer-content
 {
-  border: 1px solid #4679bd;
+  border: 1px solid #00FFFF;
   height: 350px;
 }
 .footer .footer-bottom{
   background:#0d2240;
-  color:#4679bd ;
-  height: 50px;
+  color:#00FFFF ;
+  height: 70px;
   width: 100%;
   text-align: center;
   position:bottom;
   bottom: 0px;
   left: 0px;
-  padding-top: 20px;
+  padding-top: 5px;
 }
 .container {
   position: relative;
@@ -264,7 +347,7 @@ color: white
 
 .image {
   display: block;
-  width: 100%;
+  width: 90%;
   height:50vh ;
   border:#0d2240 ;
   border-style: double;
@@ -278,7 +361,7 @@ color: white
   right: 0;
   background-color: #0d2240;
   overflow: hidden;
-  width: 100%;
+  width: 90%;
   height:0;
   transition: .5s ease;
 }
@@ -302,6 +385,16 @@ color: white
   transform: translate(-50%, -50%);
   text-align: center;
 }
+@media (max-width: 767px){
+  .overlay{
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .image{
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+}
 .bg-event{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
@@ -323,9 +416,10 @@ color: white
 }
 
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
-body > .back {
+body > .back
+  {
     margin: 5px 20px;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij4KPHJlY3Qgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2VlZWVlZSI+PC9yZWN0Pgo8ZyBpZD0iYyI+CjxyZWN0IHdpZHRoPSIzIiBoZWlnaHQ9IjMiIGZpbGw9IiNlNmU2ZTYiPjwvcmVjdD4KPHJlY3QgeT0iMSIgd2lkdGg9IjMiIGhlaWdodD0iMiIgZmlsbD0iI2Q4ZDhkOCI+PC9yZWN0Pgo8L2c+Cjx1c2UgeGxpbms6aHJlZj0iI2MiIHg9IjMiIHk9IjMiPjwvdXNlPgo8L3N2Zz4=");*/
     font-family: 'Open Sans'; 
     font-weight: 300; 
 }
@@ -364,7 +458,7 @@ p.footer {
     margin-left: -1.5px;
 }
 .timeline > li {
-    margin-bottom: 200px;
+    margin-bottom: 40px;
     position: relative;
     width: 50%;
     float: left;
@@ -416,7 +510,7 @@ p.footer {
     content:" ";
 }
 .timeline > li > .timeline-badge {
-    color: #ffffff;
+    color: black;
     width: 24px;
     height: 24px;
     line-height: 10px;
@@ -442,7 +536,7 @@ p.footer {
     right: auto;
 }
 .timeline-badge > a {
-    color: #ffffff !important;
+    color: #0d2240 !important;
 }
 .timeline-badge a:hover {
     color: #dcdcdc !important;
@@ -479,11 +573,15 @@ p.footer {
     clear: right;
 }
 .timeline > li:nth-child(2) {
-    margin-top: 180px;
+    margin-top: 70px;
 }
 
 .timeline > li.timeline-inverted > .timeline-badge {
     left: -12px;
+}
+.timeline-panel{
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .no-float {
     float: none !important;
