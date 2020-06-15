@@ -14,15 +14,29 @@ body, html {
 .nav{
     color:white;
 }
+.nav-item > a:hover {
+  display: block;
+  background-color:white ;
+  color: #0d2240 !important;
+  float: unset;
+  padding: 5px;
+  border-radius: 5% 5%;
+
+}
 .nav-link .navbar-brand{
     color: #ebb700 !important;
 }
 .navbar-brand{
     font-size: 30px !important;
+    font-weight: 900;
+}
+.navbar-brand > img {
+  border-radius: 50%;
+  margin-top: 0 !important;
 }
 .nav-link{
     font-size: 30px;
-    margin-bottom: 20px;
+    
     margin-left:10px;
     margin-right: 10px;
 }
@@ -32,6 +46,12 @@ body, html {
   font-size: 90px;
   color:#ebb700;
   margin-bottom: 35vw;
+}
+.first{
+  object-fit: cover;
+}
+.third{
+  object-fit: cover !important;
 }
 h1{
     text-align: center !important;
@@ -60,6 +80,10 @@ h6{
 .cardimage {
   height: 300px;
   width: 100%;
+}
+.card > img {
+  object-fit: cover;
+  background-color: black;
 }
 .board{
   color: #0d2240;
@@ -157,16 +181,20 @@ h6{
     margin-right: 20% !important;
   }
   .board > h1{
-    font-size: 7vh !important;
-    text-align: center;
+    font-size: 5.5vh !important;
+    text-align: center !important;
   }
   .board1 > h1{
-    font-size: 6vh !important;
+    font-size: 4.5vh !important;
     margin-left:15.5%;
     margin-right: 15.5%;
   }
   .card{
     height: 400px !important;
+  }
+  .card > img {
+    object-fit: contain;
+    background-color: black;
   }
 }
 @media (min-width:768px) and ( max-width:1024px){
@@ -184,6 +212,10 @@ h6{
   }
   .card-body > p {
     font-size: 3.7vh !important;
+  }
+  .card > img {
+    object-fit: contain;
+    background-color: black;
   }
 }
 .css-selector{
@@ -233,7 +265,29 @@ h6{
   padding: 20px;
   border-width: 10px;
 }
+.icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: 1px solid #545454;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.125rem;
+  color: #ffffff;
+  text-decoration: none;
+}
 
+.icon:hover {
+  background-color: #fff;
+  text-decoration: none;
+  color: #212121;
+}
 .parallax {
     height: 30vw;
     /* The image used */
@@ -249,7 +303,7 @@ h6{
     
 }
 /* Footer with icons */
-.middle{
+/*.middle{
   position: sticky;
   top: 50%;
   transform: translateY(-50%);
@@ -338,13 +392,15 @@ color: white
   bottom: 0px;
   left: 0px;
   padding-top: 5px;
-}
+}*/
 .container {
   position: relative;
   width:100% ;
-  height: 50vh;
+ 
 }
-
+.footer{
+  height: 70px !important;
+}
 .image {
   display: block;
   width: 90%;
@@ -352,6 +408,7 @@ color: white
   border:#0d2240 ;
   border-style: double;
   box-shadow:2px 2px 4px #0d2240;
+  object-fit: cover;
 }
 
 .overlay {
