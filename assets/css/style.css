@@ -71,8 +71,8 @@ h6{
 .card{
   margin-left: auto;
   margin-right: auto;
-  width: auto !important;
-  height:450px;
+  width: 100% !important;
+  height:55vh !important;
 }
 .card-body{
   text-align: center;
@@ -190,11 +190,14 @@ h6{
     margin-right: 15.5%;
   }
   .card{
-    height: 400px !important;
+    height: 65vh !important;
   }
   .card > img {
     object-fit: contain;
     background-color: black;
+  }
+  .card-text{
+
   }
 }
 @media (min-width:768px) and ( max-width:1024px){
@@ -205,7 +208,8 @@ h6{
     font-size: 5vh !important;
   }
   .card{
-    height: 530px !important;
+    height: 96vh ;
+    border: white !important;
   }
   .card-body > h4{
     font-size: 4.8vh !important;
@@ -216,6 +220,9 @@ h6{
   .card > img {
     object-fit: contain;
     background-color: black;
+  }
+  .card {
+    height: 100vh !important;
   }
 }
 .css-selector{
@@ -393,7 +400,7 @@ color: white
   left: 0px;
   padding-top: 5px;
 }*/
-.container {
+.container-fluid {
   position: relative;
   width:100% ;
  
@@ -409,6 +416,8 @@ color: white
   border-style: double;
   box-shadow:2px 2px 4px #0d2240;
   object-fit: cover;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
 }
 
 .overlay {
@@ -421,11 +430,13 @@ color: white
   width: 90%;
   height:0;
   transition: .5s ease;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
 }
 .overlay .h1{
   font-size: 0.5vh;
 }
-.container:hover .overlay {
+.container-fluid:hover .overlay {
   opacity: 1;
   bottom: 0;
   height: 100%;
