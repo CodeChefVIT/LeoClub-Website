@@ -4,8 +4,9 @@ body{
 	font-family: "montserrat",sans-serif;
 	min-height: 100vh;
 	background-image: 100vh;
-	background-image: linear-gradient(125deg,#6a89cc,#b8e994);
-
+	background-image: linear-gradient(125deg,#0177B7,white);
+	overflow-x: hidden;
+    overflow-y: visible;
 }
 
 .container{
@@ -15,19 +16,22 @@ body{
 	transform: translateY(-50%);
 	text-align: center;
 	color: #343434;
+	left: 12.5%;
 }
-.container h1{
+.container > h1{
 	font-size: 160px;
 	margin: 0;
 	font-weight: 900;
 	letter-spacing: 20px;
-	background:url(../img/bg.jpg) center no-repeat;
+	background:url(bg.jpg) center no-repeat;
 	 -webkit-text-fill-color:transparent;
 	 -webkit-background-clip:text;
+	 text-align: center;
+	 
 }
 .container a{
 	text-decoration: none;
-	background: #e55039aa;
+	background:#005888;
 	color: #fff;
 	padding: 12px 24px;
 	display: inline-block;
@@ -37,6 +41,12 @@ body{
 	transition: 0.4s;
 }
 .container a:hover{
-	background: #e55039;
+	background: #0177B7;
+	color: black;
 	
+}
+@media (max-width:780px){
+	.container{
+		left: 7%;
+	}
 }

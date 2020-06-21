@@ -632,8 +632,8 @@ body > .board
 .team-member
 {
 	width: 100%;
-	height: auto;
-	float: left;
+    height: auto;
+    float: right;
 	box-shadow: 5px 5px 15px #000;
 	position: relative;
 	display: block;
