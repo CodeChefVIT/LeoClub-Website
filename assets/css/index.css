@@ -49,13 +49,7 @@ body {
 }
 
 /* Box Shadow */
-.add-boxshadow {
-    box-shadow: 0 0 5px #707070;
-}
 
-.add-boxshadow-yellow {
-    box-shadow: -10px -10px 2px rgba(255, 218, 185, 0.692), 0px 0px 5px rgba(255, 218, 185, 0.692);
-}
 .add-boxshadow-blue {
     box-shadow: -10px -10px 2px rgba(1, 119, 183,0.6), 0px 0px 5px rgba(1, 119, 183,0.6);
 }
@@ -68,6 +62,9 @@ body {
 }
 
 /* Navbar Custom */
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
 .navbar-custom {
     background-color: white;
 }
@@ -138,6 +135,7 @@ body {
     border-radius: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
+
 }
 
 #loader.show {
@@ -424,7 +422,7 @@ button:focus {
   .overlay .h1{
     font-size: 0.5vh;
   }
-  .container-fluid:hover .overlay {
+  .col-md-7:hover > .overlay {
     opacity: 1;
     bottom: 0;
     height: 100%;
@@ -544,7 +542,6 @@ button:focus {
     box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.8);
   }
   .timeline > a:hover, a:active, a:focus {
-    background: white;
     color: #FFFFFF;
     text-decoration: none;
   }
@@ -793,104 +790,12 @@ body > .board
     margin-bottom: 15vh;
 }
 
-/* Benefits Section */
-#benefits {
-    background-color: #F5F5F5;
-    padding: 20px;
-}
-
-/* Testimony Watch Section */
-#test-image {
-    background-image: url("../img/testimony-header.png");
-    background-size: cover;
-    min-height: 50vh;
-    padding: 30px;
-    background-repeat: no-repeat;
-    background-color: #FAFAFA;
-}
-
-.test-text-mt {
-    margin-top: 15vh;
-}
-
-@media only screen and (max-width: 780px) {
-    #test-image {
-        background-image: none;
-        background-color: #001D6C;
-    }
-
-    .test-text-mt {
-        margin-top: 2vh;
-    }
-}
-
-/* Join Us Section */
-#joinus {
-    margin-bottom: 5vh;
-    padding: 20px;
-}
-
-/* Statistics */
-#stats {
-    background-color: #001D6C;
-    padding: 30px;
-}
-
-#green-box {
-    background-color: #2CEECD;
-}
 
 .logo-greenbox {
     max-width: 140px;
     max-height: 70px;
 }
 
-.btn-fame-reg {
-    color: white;
-    background-color: #0177B7;
-    padding: 15px;
-    min-height: 55px;
-    border-radius: 0;
-    outline: none !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.btn-fame-reg:hover {
-    background-color: #0177B7;
-    color: white;
-    outline: none !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.btn-fame-reg:focus {
-    background-color: #0177B7;
-    color: white;
-    outline: none !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-@media screen and (min-width: 780px) {
-    .special-mt {
-        margin-top: 13vh;
-    }
-
-    #green-box {
-        display: block;
-        position: relative;
-        min-height: 45vh;
-        top: 80px;
-        overflow-y: visible;
-    }
-}
-
-@media screen and (max-width: 780px) {
-    #green-box {
-        margin-bottom: 5vh;
-    }
-}
 
 /* Search Jobs Section */
 #search-jobs {
@@ -898,130 +803,145 @@ body > .board
     margin-bottom: 15vh;
 }
 
-/* Testimonial Carousel */
-@media screen and (min-width: 760px) {
-    .col-md-offset-2 {
-        margin-left: 16.66666667%;
-    }
-}
-
-@media screen and (max-width: 760px) {
-    .col-md-offset-2 {
-        margin-left: 0;
-    }
-}
-
-#quote-carousel {
-    padding: 0 10px 30px 10px;
-    margin-top: 60px;
-    
-}
-
-#quote-carousel .carousel-indicators {
-    position: relative;
-    right: 50%;
-    top: auto;
-    bottom: 0px;
-    margin-top: 20px;
+/* coordinator Carousel */
+.coordinator-img{
     border-radius: 50%;
 }
-
-#quote-carousel .carousel-indicators {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    opacity: 0.5;
-    overflow: hidden;
-    vertical-align: middle;
-    border-radius: 50%;
-}
-
-#car-active {
-    margin: 0;
-    width: 128px;
-    height: 128px;
-    opacity: 1;
-}
-
-@media screen and (max-width: 780px) {
-    .carousel-indicators {
-        margin-top: 3vh;
-        margin-bottom: 3vh;
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
     }
 }
-
-.carousel-control-prev,
-.carousel-control-next {
-    opacity: 1;
-}
-
-#testimonials {
-    background-image: url(../img/coordinator/test-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 10vh;
-}
-
-.test-heading {
-    margin-top: 5vh;
-}
-
-.test-heading-bg {
-    background-image: url("../img/quote.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 8rem;
-    height: 140px;
-    margin-top: 10vh;
-}
-
-@media screen and (max-width: 780px) {
-    #testimonials {
-        background-image: none;
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
     }
 }
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
 
-/* Register Section */
-.btn-fame-reg-blue {
+    }
+
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+.bg{
+    background-color: #0177B7;
     color: white;
-    background-color: #2780E6;
-    padding: 15px;
-    min-height: 55px;
-    border-radius: 0;
-    outline: none !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
 }
-
-.btn-fame-reg-blue:hover {
-    background-color: rgb(17, 115, 228);
-    color: white;
-    outline: none !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.btn-fame-reg-blue:focus {
-    background-color: rgb(17, 115, 228);
-    color: white;
-    outline: none !important;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-#register {
-    background-color: #F5F5F5;
-    padding: 20px;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-}
-
-.white-box {
-    background-color: white;
-    padding: 30px;
-    max-width: 450px;
-    width: 450px;
+.name{
+    padding:10px;
 }
 
 /* Footer */
@@ -1161,54 +1081,5 @@ body > .board
         display: block;
         margin-right: 0;
         font-weight: 600;
-    }
-}
-
-/* Services Section in about.html */
-.services-color {
-    color: #6E6E6E;
-}
-
-.services-box {
-    min-width: 230px;
-    width: 300px;
-}
-
-@media (min-width:780px) {
-    .services-box {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
-
-/* Categories in jobs.html */
-#jobs {
-    color: #568EFF;
-}
-
-.blue-box {
-    border: 1px solid #568EFF;
-    padding: 20px;
-    vertical-align: middle;
-    min-width: 240px;
-    max-height: 80px;
-    text-decoration: none;
-}
-
-#blue-box-hover {
-    text-decoration: none;
-    color: #568EFF;
-}
-
-#blue-box-hover:hover {
-    text-decoration: none;
-    color: rgb(0, 22, 65);
-}
-
-
-@media (min-width:500px) {
-    .blue-box {
-        margin-left: 10px;
-        margin-right: 10px;
     }
 }

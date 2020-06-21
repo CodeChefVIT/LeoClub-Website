@@ -71,5 +71,8 @@ $(function(){
 
   // AOS Animations
   AOS.init();
+  
+  
+  
 
 })(jQuery);
