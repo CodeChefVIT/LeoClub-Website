@@ -7,7 +7,6 @@ body {
     overflow-x: hidden;
     overflow-y: visible;
 }
-
 .container {
     overflow-y: hidden;
 }
@@ -644,6 +643,45 @@ body > .board
     background:#005888;  
     margin-bottom: 20px;
 }
+.team-member1
+{
+	width: 80%;
+    height: auto;
+    float: left;
+	box-shadow: 5px 5px 15px #000;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 15px;
+	text-align: center;
+	margin:0 5px;
+    background:#005888;  
+    margin-bottom: 20px;
+}
+.team-member1
+{
+	width: 80%;
+    height: auto;
+	box-shadow: 5px 5px 15px #000;
+	position: relative;
+	display: block;
+	overflow: hidden;
+	padding: 15px;
+	text-align: center;
+	margin:0 5px;
+    background:#005888;  
+    margin-bottom: 20px;
+}
+.b1{
+    float: right;
+}
+.b2{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.b3{
+    float: left;
+}
 .team-member > img{
 	display:block;
 	margin-left: auto;
@@ -653,7 +691,20 @@ body > .board
 	object-fit: cover;
 }
 
+.team-member1 > img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
 .team-member h3{
+	margin:0;
+	font-size: 25px;
+	color: #fff; 
+}
+.team-member1 h3{
 	margin:0;
 	font-size: 25px;
 	color: #fff; 
@@ -662,7 +713,24 @@ body > .board
 	color: #fff;
 	font-size: 20px;
 }
+.team-member1 p{
+	color: #fff;
+	font-size: 20px;
+}
 .team-member:before
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	bottom: 0;
+	height: 4px;
+	width: 100%;
+	border-bottom:4px solid transparent; 
+	border-left:4px solid transparent;
+	box-sizing: border-box;
+	transform: translateX(100%);
+}
+.team-member1 :before
 {
 	position: absolute;
 	content: '';
@@ -688,6 +756,19 @@ body > .board
 	box-sizing: border-box;
 	transform: translateX(-100%);
 }
+.team-member1 :after
+{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	height: 4px;
+	width: 100%;
+	border-top:4px solid transparent; 
+	border-right:4px solid transparent;
+	box-sizing: border-box;
+	transform: translateX(-100%);
+}
 .team-member:hover:before
 {
 	border-color:#d04f81;
@@ -695,6 +776,7 @@ body > .board
 	transform:translateX(0);
 	transition .3s transform linear,.3s height linear .3s;
 }
+
 .team-member:hover:after
 {
 	border-color:#d04f81;
@@ -702,6 +784,8 @@ body > .board
 	transform:translateX(0);
 	transition .3s transform linear,.3s height linear .5s;
 }
+
+
 @media (max-width: 767px){
 	.team-member > img{
 		display:block;
@@ -710,6 +794,19 @@ body > .board
 	    object-fit: cover;
 	}
 	.team-member{
+		display: block;
+		width: 60%;
+		margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20px;
+    }
+    .team-member1 > img{
+		display:block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    object-fit: cover;
+	}
+	.team-member1{
 		display: block;
 		width: 60%;
 		margin-left: 20%;
@@ -806,6 +903,12 @@ body > .board
 /* coordinator Carousel */
 .coordinator-img{
     border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+.top-content > .container-fluid > .row > h2{
+    text-align: center;
+
 }
 @media (min-width: 768px) and (max-width: 991px) {
     /* Show 4th slide on md if col-md-4*/
