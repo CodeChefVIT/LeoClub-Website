@@ -15,7 +15,7 @@ Official website for the Leo Club VIT.
 - Contains information about LeoClub VIT , their previous events and their current board and committe members.
 
 ## Screenshots
-<img src="https://github.com/CodeChefVIT/LeoClub-Website/blob/master/assets/img/Screenshot%20.png" alt="Project Screenshot">
+<img src="https://github.com/CodeChefVIT/LeoClub-Website/blob/master/assets/img/screenshot.png" alt="Project Screenshot">
 
 ## Tech Stack Used
 - HTML
