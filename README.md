@@ -10,11 +10,10 @@ Official website for the Leo Club VIT.
 [![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://github.com/CodeChefVIT/LeoClub-Website/blob/master/index.html)
 
 ## Features
-- Website is made by using HTML , CSS , Jquery , Javascript and Bootstrap.
-- Contains information about LeoClub VIT , their previous events and their current board and committe members.
+- Contains information about Leo Club VIT, their previous events and their current board and committee members.
 
 ## Screenshots
-<img src="https://github.com/CodeChefVIT/LeoClub-Website/blob/master/assets/img/screenshot.png" alt="Project Screenshot">
+<img src="https://github.com/CodeChefVIT/LeoClub-Website/blob/master/assets/img/screenshot.png" alt="LEO Club VIT Screenshot">
 
 ## Tech Stack Used
 - HTML
@@ -24,8 +23,8 @@ Official website for the Leo Club VIT.
 - Javascript
 
 ## Contributors
-- <a href="https://github.com/<Aarushi21>">Aarushi Shrestha</a>
-- <a href="https://github.com/<yasharthratan>">Yasharth Tripathi</a>
+- <a href="https://github.com/Aarushi21">Aarushi Shrestha</a>
+- <a href="https://github.com/yasharthratan">Yasharth Tripathi</a>
 
 ## License
 
