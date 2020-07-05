@@ -614,9 +614,14 @@ button:focus {
     }
   }
 /*----Board----*/
+.board > .container-fluid{
+    padding-left: 11%;
+    padding-right: 11%;
+}
 body > .board
 {
-	background:#0177B7;
+    background:#0177B7;
+
 }
 
 .section-header
@@ -907,6 +912,13 @@ body > .board
     width: 80%;
     height: 80%;
 }
+@media (max-width:991px) {
+    .coordinator-img{
+        border-radius: 50%;
+        width: 50% !important;
+        height: 72% !important;
+    }
+}
 .top-content > .container-fluid > .row > h2{
     text-align: center;
 
@@ -932,6 +944,7 @@ body > .board
         display: block;
         visibility: visible;
     }
+
 }
 @media (min-width: 576px) {
     .carousel-item {
@@ -1006,6 +1019,7 @@ body > .board
         display: block;
         visibility: visible;
     }
+    
 }
 /* LG */
 @media (min-width: 991px) {
