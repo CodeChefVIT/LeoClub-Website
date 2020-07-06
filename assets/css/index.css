@@ -6,7 +6,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     overflow-x: hidden;
     overflow-y: visible;
-
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -649,20 +649,20 @@ a:focus {
 }
 
 /*----Board----*/
-.board-bg > .container-fluid{
+.board-bg>.container-fluid {
     padding-left: 11%;
     padding-right: 11%;
 }
 
 @media (max-width:768px) {
-    .board-bg > .container-fluid{
+    .board-bg>.container-fluid {
         padding-left: 0;
         padding-right: 0;
     }
 }
-body > .board > .board-bg
-{
-    background:#0177B7;
+
+body>.board>.board-bg {
+    background: #0177B7;
 
 }
 
