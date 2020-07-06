@@ -614,17 +614,17 @@ button:focus {
     }
   }
 /*----Board----*/
-.board > .container-fluid{
+.board-bg > .container-fluid{
     padding-left: 11%;
     padding-right: 11%;
 }
 @media (max-width:768px) {
-    .board > .container-fluid{
+    .board-bg > .container-fluid{
         padding-left: 0;
         padding-right: 0;
     }
 }
-body > .board
+body > .board > .board-bg
 {
     background:#0177B7;
 
