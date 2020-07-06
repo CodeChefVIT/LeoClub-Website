@@ -32,7 +32,7 @@ body {
 
 }
 
-.container a {
+.container button {
 	text-decoration: none;
 	background: #005888;
 	color: #fff;
@@ -42,12 +42,17 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	transition: 0.4s;
+	outline: none;
+	box-shadow: none;
+	border: none;
 }
 
-.container a:hover {
+.container button:hover {
 	background: #0177B7;
-	color: black;
-
+	color: white;
+	outline: none;
+	box-shadow: none;
+	border: none;
 }
 
 @media (max-width:780px) {
