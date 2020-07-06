@@ -13,15 +13,13 @@
         loader();
     });
 
-    //navbar
-    
-
     // AOS Animations
     AOS.init();
 
 })(jQuery);
 
-$('nav > .navbar-collapse > ul > li > a').on('click',function(){
-  $('navbar-collapse').collapse('hide');
+// Navbar
+$('nav > .navbar-collapse > ul > li > a').on('click', function () {
+    $('navbar-collapse').collapse('hide');
 });
 

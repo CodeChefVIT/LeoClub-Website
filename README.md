@@ -6,14 +6,13 @@
 Official website for the Leo Club VIT.
 
 ---
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://github.com/CodeChefVIT/LeoClub-Website) 
-[![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://github.com/CodeChefVIT/LeoClub-Website/blob/master/index.html)
+[![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://www.leoclubvit.com)
 
 ## Features
 - Contains information about Leo Club VIT, their previous events and their current board and committee members.
 
 ## Screenshots
-<img src="https://github.com/CodeChefVIT/LeoClub-Website/blob/master/assets/img/screenshot.png" alt="LEO Club VIT Screenshot">
+<img src="https://github.com/CodeChefVIT/LeoClub-Website/blob/master/assets/img/screenshot.png" alt="Leo Club VIT Screenshot">
 
 ## Tech Stack Used
 - HTML
