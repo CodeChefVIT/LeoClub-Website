@@ -20,6 +20,6 @@
 
 // Navbar
 $('nav > .navbar-collapse > ul > li > a').on('click', function () {
-    $('navbar-collapse').collapse('hide');
+    $('.navbar-collapse').removeClass('show');
 });
 
